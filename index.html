@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeylonVisor</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="global.js" defer></script>
+</head>
+
+<body>
+  <section id="header">
+    <header class="site-header">
+      <div class="container header-container">
+        <div class="logo-group">
+          <div class="logo-icon">
+            <img src="images/logo.png" alt="Logo">
+          </div>
+          <span class="logo-text">Ceylon<span class="font-light">Visor</span></span>
+        </div>
+
+        <nav class="main-nav">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#heritage-guide" class="nav-link">Features</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </nav>
+
+        <div class="header-cta">
+          <a href="https://play.google.com/store" target="_blank" class="btn-download">
+            <span>Download App</span>
+            <img src="images/download icon.svg" alt="Download Icon">
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+  </section>
+  <section id="hero" class="section">
+    <div class="hero-bg">
+      <img src="images/background.png" alt="Hero Background" class="bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-text-group">
+        <svg class="hero-deco liyawela-pattern" viewBox="0 0 240 40" xmlns="http://www.w3.org/2000/svg">
+          <!-- Horizontal Vine -->
+          <path d="M0 20 
+                 C 20 5, 40 35, 60 20 
+                 C 80 5, 100 35, 120 20 
+                 C 140 5, 160 35, 180 20 
+                 C 200 5, 220 35, 240 20" />
+          <!-- Leaves Top -->
+          <path d="M30 20 C 25 10, 35 5, 40 15" />
+          <path d="M90 20 C 85 10, 95 5, 100 15" />
+          <path d="M150 20 C 145 10, 155 5, 160 15" />
+          <path d="M210 20 C 205 10, 215 5, 220 15" />
+          <!-- Leaves Bottom -->
+          <path d="M60 20 C 55 30, 65 35, 70 25" />
+          <path d="M120 20 C 115 30, 125 35, 130 25" />
+          <path d="M180 20 C 175 30, 185 35, 190 25" />
+        </svg>
+
+        <img src="images/icon.png" alt="Scroll Down" class="hero-scroll-logo">
+        <h1 class="hero-title reveal-fade-up">Ceylon<span class="font-light">Visor</span></h1>
+        <div class="hero-subtitle reveal-fade-up delay-200">
+          <p>Discover cultural heritage, landmarks, and local treasures through immersive augmented reality experiences.
+          </p>
+        </div>
+        <div class="hero-actions reveal-fade-up delay-400">
+          <span class="action-label">Begin the Journey</span>
+          <a href="https://play.google.com/store" target="_blank" class="playstore-btn">
+            <div class="merged-image-wrapper playstore-wrapper">
+              <div class="playstore-bg"></div>
+              <img src="images/play store icon.svg" class="playstore-icon" alt="Play Store Icon">
+              <div class="playstore-content">
+                <span class="playstore-label">GET IT ON</span>
+                <img src="images/play store brand.svg" class="playstore-brand" alt="Google Play">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Sequence Wrapper -->
+  <div class="features-sequence">
+
+    <!-- The Single Sticky Phone -->
+    <div class="sticky-phone-wrapper">
+      <div class="phone-mockup merged-image-wrapper mockup-container animate-float" id="master-phone">
+        <div class="phone-body mockup-frame">
+          <img src="images/home page.png" class="mockup-screen" id="master-phone-screen" alt="App Screenshot">
+        </div>
+        <div class="notch mockup-notch"></div>
+        <div class="mockup-btns-right">
+          <div class="btn-vol"></div>
+          <div class="btn-pwr"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="heritage-guide" class="section" data-pos="right" data-img="images/home page.png" data-bg="#ffffff">
+      <div class="container">
+        <div class="grid-2">
+          <div class="content-col reveal-slide-left">
+            <div class="text-wrapper">
+              <div class="section-tag">Your Personal</div>
+              <h2 class="section-title">Heritage Guide</h2>
+              <p class="section-desc">
+                The Home page is the central hub of the CeylonVisor app, designed to introduce users to the AR experience and guide them toward key features. It highlights Sri Lanka’s cultural heritage, landmarks, and products while providing quick access to AR scanning, exploration, and discoveries.
+              </p>
+
+              <div class="feature-cards">
+                <div class="card">
+                  <div class="card-icon"><img src="images/home 1.svg" alt="Icon"></div>
+                  <div class="card-text">
+                    <h3>Featured Landmarks</h3>
+                    <p>Featured cultural landmarks and products</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-icon"><img src="images/home 2.svg" alt="Icon"></div>
+                  <div class="card-text">
+                    <h3>Quick Access</h3>
+                    <p>Quick access to AR Scan, Capture, and Map</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-col">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="history-reimagined" class="section" data-pos="left" data-img="images/home page.png" data-bg="#fffbf0">
+      <div class="container">
+        <div class="grid-2">
+          <div class="visual-col">
+          </div>
+
+          <div class="content-col reveal-slide-right">
+            <div class="text-wrapper">
+              <div class="section-tag text-gold">Augmented Reality</div>
+              <h2 class="section-title text-dark-brown">History <br><span class="text-gold">Reimagined</span></h2>
+              <p class="section-desc text-brown">
+                The AR page is the core feature of CeylonVisor, allowing users to experience Sri Lankan culture through real-time augmented reality. By scanning objects, locations, or markers, users can view 3D models.
+              </p>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="f-icon-box"><img src="images/AR 1.svg"></div>
+                  <div class="f-text">
+                    <h3>Instant Reconstruction</h3>
+                    <p>Real-time 3D overlays on historical sites.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="f-icon-box"><img src="images/AR 2.svg"></div>
+                  <div class="f-text">
+                    <h3>Time Travel</h3>
+                    <p>Toggle between centuries to see architectural evolution.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/flower.svg" class="bg-deco-svg-right animate-bloom" alt="Decoration">
+      </div>
+    </section>
+    <section id="capture-moment" class="section" data-pos="right" data-img="images/capture page.png" data-bg="#111827">
+      <div class="container">
+        <div class="grid-2">
+          <div class="content-col reveal-slide-left">
+            <div class="text-wrapper">
+              <div class="section-tag text-white">Capture the</div>
+              <h2 class="section-title text-green">Moment</h2>
+              <p class="section-desc text-white">
+                The Capture page enables users to record and save their AR experiences. It allows users to capture photos and videos while interacting with AR objects, making it easy to share discoveries on social media.
+              </p>
+
+              <div class="feature-cards-dark">
+                <div class="card-dark">
+                  <div class="card-icon"><img src="images/capture 1.svg"></div>
+                  <div class="card-text">
+                    <h3>Artistic Filters</h3>
+                    <p>Styles from Kandyan era paintings.</p>
+                  </div>
+                </div>
+                <div class="card-dark">
+                  <div class="card-icon"><img src="images/capture 2.svg"></div>
+                  <div class="card-text">
+                    <h3>Gallery Save</h3>
+                    <p>Save media to device gallery</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-col">
+          </div>
+        </div>
+        <img src="images/flower 2.svg" class="bg-deco-left animate-bloom" alt="Decoration">
+      </div>
+    </section>
+    <section id="navigate-unknown" class="section" data-pos="left" data-img="images/map page.png" data-bg="#f3f4f6">
+      <div class="container">
+        <div class="grid-2">
+          <div class="visual-col">
+          </div>
+
+          <div class="content-col reveal-slide-right">
+            <div class="text-wrapper">
+              <div class="section-tag text-black-50">Interactive Guide</div>
+              <h2 class="section-title text-black">Navigate the <br><span class="text-black-40">Unknown</span></h2>
+              <p class="section-desc text-black-50">
+                The Map page helps users discover AR-enabled locations across Sri Lanka. It acts as a digital guide, allowing users to explore nearby landmarks, cultural sites, museums, and featured locations.
+              </p>
+
+              <div class="feature-list-brown">
+                <div class="feature-item-brown">
+                  <div class="icon-circle"><img src="images/map 1.svg"></div>
+                  <div class="text-block">
+                    <h3>Turn-by-Turn</h3>
+                    <p>Navigation to nearby cultural sites</p>
+                  </div>
+                </div>
+                <div class="feature-item-brown">
+                  <div class="icon-circle"><img src="images/map 2.svg"></div>
+                  <div class="text-block">
+                    <h3>Smart POIs</h3>
+                    <p>Context-aware historical info.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/liyawela 2.svg" class="bg-deco-vertical animate-bloom" alt="Decoration">
+      </div>
+    </section>
+    <section id="journey-logbook" class="section" data-pos="right" data-img="images/profile page.png" data-bg="#1c1917">
+      <div class="container">
+        <div class="grid-2">
+          <div class="content-col reveal-slide-left">
+            <div class="text-wrapper">
+              <div class="section-tag text-cream">Your Journey</div>
+              <h2 class="section-title text-gold">Logbook</h2>
+              <p class="section-desc text-light-gold">
+                The Profile page allows users to manage their personal information, saved content, and activity history. It personalizes the CeylonVisor experience by tracking exploration progress.
+              </p>
+
+              <div class="feature-cards-gold">
+                <div class="card-gold">
+                  <div class="icon-gold"><img src="images/profile 1.svg"></div>
+                  <p>User profile management</p>
+                </div>
+                <div class="card-gold">
+                  <div class="icon-gold"><img src="images/profile 2.svg"></div>
+                  <p>Saved Places</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-col">
+          </div>
+        </div>
+        <img src="images/liyawela.svg" class="bg-deco-wide animate-bloom" alt="Decoration">
+      </div>
+    </section>
+  </div> <!-- End features-sequence -->
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2 class="contact-title">Contact Us</h2>
+          <p class="contact-desc">Have questions or feedback? Contact us and we’ll get back to you soon.</p>
+
+          <div class="info-item">
+            <div class="icon"><img src="images/email.svg" alt="Email"></div>
+            <span>ceylonvisor@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <div class="icon"><img src="images/location.svg" alt="Location"></div>
+            <div>
+              <span>No.11 Station Road Matara</span><br>
+              <span>Sri Lanka</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><img src="images/phone.svg" alt="Phone"></div>
+            <span>+94 71 647 1001</span>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label>Name <span class="required">*</span></label>
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label>Email <span class="required">*</span></label>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>Ceylon<span class="font-light">Visor</span></span>
+          </a>
+          <p class="brand-desc">
+            CeylonVisor is an AR-powered platform that brings Sri Lanka’s culture, landmarks, and stories to life through immersive digital experiences.
+          </p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"
+                alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg"
+                alt="Instagram"></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>COMPANY</h4>
+            <a href="#hero">Home</a>
+            <a href="#heritage-guide">Features</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+          <div class="link-col">
+            <h4>HELP</h4>
+            <a href="Terms and condition.html">Terms & Conditions</a>
+            <a href="Privacy policy.html">Privacy Policy</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="Our team.html">Our Team</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="divider"></div>
+        <p>© Copyright 2025, All Rights Reserved by CeylonVisor</p>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top" aria-label="Back to Top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+  <script>
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+
+</html>
