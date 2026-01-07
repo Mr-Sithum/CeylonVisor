@@ -20,14 +20,14 @@
 
       <!-- Header -->
       <div class="faq-header">
-        <h2 class="faq-title">Frequently asked questions</h2>
-        <p class="faq-subtitle">
+        <h2 class="faq-title reveal-slide-left">Frequently asked questions</h2>
+        <p class="faq-subtitle reveal-slide-left delay-200">
           Find answers to common questions about CeylonVisor, its features, and how to use the app.
         </p>
       </div>
 
       <!-- Accordion List -->
-      <div class="accordion-list">
+      <div class="accordion-list reveal-fade-up delay-400">
 
         <!-- Item 1 (Expanded) -->
         <div class="accordion-item active">
@@ -190,18 +190,6 @@
     </div>
   </section>
 
-  <script>
-    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        const item = trigger.parentElement;
-        // Optional: Close other items
-        document.querySelectorAll('.accordion-item').forEach(i => {
-          if (i !== item) i.classList.remove('active');
-        });
-        item.classList.toggle('active');
-      });
-    });
-  </script>
 </body>
 
 </html>

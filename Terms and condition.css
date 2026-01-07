@@ -30,13 +30,14 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 .last-updated-wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--primary-black);
+  color: #666666;
 }
 
 .last-updated {
@@ -46,25 +47,26 @@ body {
 
 .decorative-line {
   height: 1px;
-  background-color: var(--primary-black);
+  background-color: #000000;
   width: 44px;
 }
 
 .decorative-svg {
   width: 44px;
   height: auto;
+  filter: none;
 }
 
 .header-intro {
   font-size: 14px;
-  color: var(--primary-black);
+  color: #666666;
   margin-top: 8px;
 }
 
 .header-divider {
   width: 100%;
   height: 5px;
-  background-color: var(--primary-black);
+  background-color: #000000;
   margin-bottom: 40px;
 }
 
@@ -73,6 +75,7 @@ body {
   max-width: 1000px;
   text-align: center;
   line-height: 1.6;
+  color: #333333;
 }
 
 @media (max-width: 768px) {
@@ -109,11 +112,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 8px;
+  color: #4169E1;
 }
 
 .toc-divider {
   height: 2px;
-  background-color: var(--primary-black);
+  background-color: #000000;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -129,14 +133,15 @@ body {
 
 .toc-nav a {
   font-size: 14px;
-  color: var(--primary-black);
+  color: #666666;
   text-decoration: none;
   transition: opacity 0.2s;
 }
 
 .toc-nav a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
+  opacity: 1;
+  color: #00BFFF;
+  text-decoration: none;
 }
 
 /* Terms Body Styles */
@@ -163,22 +168,25 @@ body {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 12px;
+  color: #4169E1;
 }
 
 .term-text p {
   font-size: 16px;
   line-height: 1.6;
   white-space: pre-wrap;
+  color: #333333;
 }
 
 .bullet-list {
-  margin-left: 30px;   
+  margin-left: 30px;
   list-style-type: disc;
+  color: #333333;
 }
 
 .term-divider {
   height: 1px;
-  background-color: var(--primary-black);
+  background-color: #000000;
   width: 100%;
   opacity: 0.2;
 }
@@ -230,7 +238,7 @@ body {
 .btn-outline {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  color: var(--text-secondary);
+  color: #000000;
 }
 
 .btn-primary {
@@ -275,7 +283,7 @@ body {
 
 .copyright {
   font-size: 14px;
-  color: var(--primary-black);
+  color: #a1a1aa;
   text-align: center;
 }
 

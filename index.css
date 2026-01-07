@@ -75,12 +75,12 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #d4af37;
+  background-color: #00FFFF;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #d4af37;
+  color: #00FFFF;
 }
 
 .nav-link:hover::after {
@@ -91,7 +91,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(90deg, #22d1ee 0%, #3d5af1 100%);
+  background: linear-gradient(90deg, #6495ED 0%, #4169E1 100%);
   border: none;
   border-radius: 47px;
   padding: 10px 24px;
@@ -197,21 +197,21 @@
 
 /* CSS for section section:HeritageGuide */
 #heritage-guide {
-  background: linear-gradient(180deg, #140759 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #140759 0%, #000000 100%);
   padding: 100px 0;
-  color: #3e2723;
+  color: #ffffff;
 }
 
 .section-tag {
   font-size: 64px;
-  color: #3e2723;
+  color: #ffffff;
   font-weight: 700;
   line-height: 1;
 }
 
 .section-title {
   font-size: 64px;
-  color: #c1502e;
+  color: #4169E1;
   font-weight: 700;
   margin: 0 0 40px 0;
   line-height: 1;
@@ -219,7 +219,7 @@
 
 .section-desc {
   font-size: 18px;
-  color: #f0ac98;
+  color: #d1d1d6;
   line-height: 1.6;
   margin-bottom: 60px;
 }
@@ -230,8 +230,8 @@
 }
 
 .card {
-  background: white;
-  border: 1px solid rgba(62, 39, 35, 0.1);
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
   flex: 1;
@@ -243,19 +243,19 @@
 
 .card-text h3 {
   font-size: 18px;
-  color: #3e2723;
+  color: #ffffff;
   margin: 0 0 5px 0;
 }
 
 .card-text p {
   font-size: 14px;
-  color: #5d4037;
+  color: #a1a1aa;
   margin: 0;
 }
 
 /* CSS for section section:HistoryReimagined */
 #history-reimagined {
-  background: linear-gradient(180deg, #ffffff 0%, #140759 100%);
+  background: linear-gradient(180deg, #000000 0%, #140759 100%);
   padding: 100px 0;
 }
 
@@ -274,7 +274,7 @@
 .f-icon-box {
   width: 48px;
   height: 48px;
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(65, 105, 225, 0.1);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -289,7 +289,7 @@
 
 .f-text p {
   font-size: 14px;
-  color: #d4af37;
+  color: #4169E1;
   margin: 5px 0 0 0;
 }
 
@@ -303,7 +303,7 @@
 
 /* CSS for section section:CaptureMoment */
 #capture-moment {
-  background: linear-gradient(180deg, #140759 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #140759 0%, #000000 100%);
   padding: 100px 0;
 }
 
@@ -313,8 +313,8 @@
 }
 
 .card-dark {
-  background: #1a331d;
-  border: 1px solid rgba(245, 230, 211, 0.1);
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
   flex: 1;
@@ -342,7 +342,7 @@
 
 /* CSS for section section:NavigateUnknown */
 #navigate-unknown {
-  background: #ffffff;
+  background: #0f0f0f;
   padding: 100px 0;
 }
 
@@ -353,8 +353,8 @@
 }
 
 .feature-item-brown {
-  background: #a03e20;
-  border: 1px solid rgba(245, 230, 211, 0.2);
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 15px;
   display: flex;
@@ -366,7 +366,7 @@
 .icon-circle {
   width: 48px;
   height: 48px;
-  background: #f5e6d3;
+  background: #333;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -382,7 +382,7 @@
 .text-block p {
   font-size: 14px;
   margin: 5px 0 0 0;
-  color: rgba(245, 230, 211, 0.8);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .bg-deco-vertical {
@@ -394,7 +394,7 @@
 
 /* CSS for section section:JourneyLogbook */
 #journey-logbook {
-  background: linear-gradient(180deg, #ffffff 0%, #140759 100%);
+  background: linear-gradient(180deg, #000000 0%, #140759 100%);
   padding: 100px 0;
 }
 
@@ -411,8 +411,8 @@
 .icon-gold {
   width: 64px;
   height: 64px;
-  background: rgba(212, 175, 55, 0.2);
-  border: 1px solid rgba(212, 175, 55, 0.5);
+  background: rgba(65, 105, 225, 0.2);
+  border: 1px solid rgba(65, 105, 225, 0.5);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -421,7 +421,7 @@
 }
 
 .card-gold p {
-  color: #d4af37;
+  color: #4169E1;
   font-size: 16px;
   font-weight: 600;
 }
@@ -884,9 +884,12 @@
   .hero-title {
     font-size: 80px;
   }
-  .section-title, .section-tag {
+
+  .section-title,
+  .section-tag {
     font-size: 48px;
   }
+
   .main-nav {
     gap: 30px;
   }
@@ -896,6 +899,7 @@
   .mobile-menu-toggle {
     display: flex;
   }
+
   .main-nav {
     position: fixed;
     top: 0;
@@ -911,28 +915,42 @@
     gap: 40px;
     z-index: 1000;
   }
+
   .main-nav.active {
     right: 0;
   }
+
   .nav-link {
     font-size: 24px;
   }
+
   .header-cta {
     display: none;
   }
+
   .hero-title {
     font-size: 48px;
   }
+
   .hero-subtitle {
     font-size: 16px;
     padding: 0 10px;
   }
-  .section-title, .section-tag {
+
+  .section-title,
+  .section-tag {
     font-size: 32px;
   }
-  .feature-cards, .feature-cards-dark, .feature-cards-gold, .contact-wrapper, .footer-links, .footer-top {
+
+  .feature-cards,
+  .feature-cards-dark,
+  .feature-cards-gold,
+  .contact-wrapper,
+  .footer-links,
+  .footer-top {
     flex-direction: column;
   }
+
   .footer-links {
     margin: 0;
     gap: 40px;

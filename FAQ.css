@@ -1,6 +1,6 @@
 /* CSS for section section:FAQ */
 .faq-section {
-  background-color: #f4eeff;
+  background-color: #ffffff;
   padding: 128px 20px;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
 .faq-subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
+  color: #666666;
   line-height: 1.5;
   max-width: 600px;
 }
@@ -73,13 +73,15 @@
   height: auto;
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  filter: none;
+  /* Invert icon to white */
 }
 
 .accordion-content {
   margin-top: 24px;
   font-size: 16px;
   line-height: 1.6;
-  color: #000000;
+  color: #666666;
   max-width: 1106px;
   display: none;
 }
@@ -150,7 +152,7 @@
 .btn-outline {
   border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  color: var(--text-secondary);
+  color: #000000;
 }
 
 .btn-primary {

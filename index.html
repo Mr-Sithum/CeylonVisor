@@ -12,9 +12,12 @@
   <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="index.css">
   <script src="global.js" defer></script>
+  <script src="index.js" defer></script>
+  <script src="background-animation.js" defer></script>
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
   <section id="header">
     <header class="site-header">
       <div class="container header-container">
@@ -72,12 +75,12 @@
         </svg>
 
         <img src="images/icon.png" alt="Scroll Down" class="hero-scroll-logo">
-        <h1 class="hero-title reveal-fade-up">Ceylon<span class="font-light">Visor</span></h1>
-        <div class="hero-subtitle reveal-fade-up delay-200">
+        <h1 class="hero-title reveal-slide-left">Ceylon<span class="font-light">Visor</span></h1>
+        <div class="hero-subtitle reveal-slide-left delay-200">
           <p>Discover cultural heritage, landmarks, and local treasures through immersive augmented reality experiences.
           </p>
         </div>
-        <div class="hero-actions reveal-fade-up delay-400">
+        <div class="hero-actions reveal-slide-left delay-400">
           <span class="action-label">Begin the Journey</span>
           <a href="https://play.google.com/store" target="_blank" class="playstore-btn">
             <div class="merged-image-wrapper playstore-wrapper">
@@ -112,18 +115,20 @@
       </div>
     </div>
 
-    <section id="heritage-guide" class="section" data-pos="right" data-img="images/home page.png" data-bg="#ffffff">
+    <section id="heritage-guide" class="section" data-pos="right" data-img="images/home page.png" data-bg="#000000">
       <div class="container">
         <div class="grid-2">
-          <div class="content-col reveal-slide-left">
+          <div class="content-col">
             <div class="text-wrapper">
-              <div class="section-tag">Your Personal</div>
-              <h2 class="section-title">Heritage Guide</h2>
-              <p class="section-desc">
-                The Home page is the central hub of the CeylonVisor app, designed to introduce users to the AR experience and guide them toward key features. It highlights Sri Lanka’s cultural heritage, landmarks, and products while providing quick access to AR scanning, exploration, and discoveries.
+              <div class="section-tag reveal-slide-left">Your Personal</div>
+              <h2 class="section-title reveal-slide-left delay-200">Heritage Guide</h2>
+              <p class="section-desc reveal-slide-left delay-400">
+                The Home page is the central hub of the CeylonVisor app, designed to introduce users to the AR
+                experience and guide them toward key features. It highlights Sri Lanka’s cultural heritage, landmarks,
+                and products while providing quick access to AR scanning, exploration, and discoveries.
               </p>
 
-              <div class="feature-cards">
+              <div class="feature-cards reveal-slide-left delay-400">
                 <div class="card">
                   <div class="card-icon"><img src="images/home 1.svg" alt="Icon"></div>
                   <div class="card-text">
@@ -147,21 +152,23 @@
         </div>
       </div>
     </section>
-    <section id="history-reimagined" class="section" data-pos="left" data-img="images/home page.png" data-bg="#fffbf0">
+    <section id="history-reimagined" class="section" data-pos="left" data-img="images/home page.png" data-bg="#0a0a0a">
       <div class="container">
         <div class="grid-2">
           <div class="visual-col">
           </div>
 
-          <div class="content-col reveal-slide-right">
+          <div class="content-col">
             <div class="text-wrapper">
-              <div class="section-tag text-gold">Augmented Reality</div>
-              <h2 class="section-title text-dark-brown">History <br><span class="text-gold">Reimagined</span></h2>
-              <p class="section-desc text-brown">
-                The AR page is the core feature of CeylonVisor, allowing users to experience Sri Lankan culture through real-time augmented reality. By scanning objects, locations, or markers, users can view 3D models.
+              <div class="section-tag text-gold reveal-slide-right">Augmented Reality</div>
+              <h2 class="section-title text-white reveal-slide-right delay-200">History <br><span
+                  class="text-gold">Reimagined</span></h2>
+              <p class="section-desc text-white reveal-slide-right delay-400">
+                The AR page is the core feature of CeylonVisor, allowing users to experience Sri Lankan culture through
+                real-time augmented reality. By scanning objects, locations, or markers, users can view 3D models.
               </p>
 
-              <div class="feature-list">
+              <div class="feature-list reveal-slide-right delay-400">
                 <div class="feature-item">
                   <div class="f-icon-box"><img src="images/AR 1.svg"></div>
                   <div class="f-text">
@@ -183,18 +190,20 @@
         <img src="images/flower.svg" class="bg-deco-svg-right animate-bloom" alt="Decoration">
       </div>
     </section>
-    <section id="capture-moment" class="section" data-pos="right" data-img="images/capture page.png" data-bg="#111827">
+    <section id="capture-moment" class="section" data-pos="right" data-img="images/capture page.png" data-bg="#050505">
       <div class="container">
         <div class="grid-2">
-          <div class="content-col reveal-slide-left">
+          <div class="content-col">
             <div class="text-wrapper">
-              <div class="section-tag text-white">Capture the</div>
-              <h2 class="section-title text-green">Moment</h2>
-              <p class="section-desc text-white">
-                The Capture page enables users to record and save their AR experiences. It allows users to capture photos and videos while interacting with AR objects, making it easy to share discoveries on social media.
+              <div class="section-tag text-white reveal-slide-left">Capture the</div>
+              <h2 class="section-title text-green reveal-slide-left delay-200">Moment</h2>
+              <p class="section-desc text-white reveal-slide-left delay-400">
+                The Capture page enables users to record and save their AR experiences. It allows users to capture
+                photos and videos while interacting with AR objects, making it easy to share discoveries on social
+                media.
               </p>
 
-              <div class="feature-cards-dark">
+              <div class="feature-cards-dark reveal-slide-left delay-400">
                 <div class="card-dark">
                   <div class="card-icon"><img src="images/capture 1.svg"></div>
                   <div class="card-text">
@@ -219,21 +228,23 @@
         <img src="images/flower 2.svg" class="bg-deco-left animate-bloom" alt="Decoration">
       </div>
     </section>
-    <section id="navigate-unknown" class="section" data-pos="left" data-img="images/map page.png" data-bg="#f3f4f6">
+    <section id="navigate-unknown" class="section" data-pos="left" data-img="images/map page.png" data-bg="#0f0f0f">
       <div class="container">
         <div class="grid-2">
           <div class="visual-col">
           </div>
 
-          <div class="content-col reveal-slide-right">
+          <div class="content-col">
             <div class="text-wrapper">
-              <div class="section-tag text-black-50">Interactive Guide</div>
-              <h2 class="section-title text-black">Navigate the <br><span class="text-black-40">Unknown</span></h2>
-              <p class="section-desc text-black-50">
-                The Map page helps users discover AR-enabled locations across Sri Lanka. It acts as a digital guide, allowing users to explore nearby landmarks, cultural sites, museums, and featured locations.
+              <div class="section-tag text-white reveal-slide-right">Interactive Guide</div>
+              <h2 class="section-title text-white reveal-slide-right delay-200">Navigate the <br><span
+                  class="text-white">Unknown</span></h2>
+              <p class="section-desc text-white reveal-slide-right delay-400">
+                The Map page helps users discover AR-enabled locations across Sri Lanka. It acts as a digital guide,
+                allowing users to explore nearby landmarks, cultural sites, museums, and featured locations.
               </p>
 
-              <div class="feature-list-brown">
+              <div class="feature-list-brown reveal-slide-right delay-400">
                 <div class="feature-item-brown">
                   <div class="icon-circle"><img src="images/map 1.svg"></div>
                   <div class="text-block">
@@ -258,15 +269,16 @@
     <section id="journey-logbook" class="section" data-pos="right" data-img="images/profile page.png" data-bg="#1c1917">
       <div class="container">
         <div class="grid-2">
-          <div class="content-col reveal-slide-left">
+          <div class="content-col">
             <div class="text-wrapper">
-              <div class="section-tag text-cream">Your Journey</div>
-              <h2 class="section-title text-gold">Logbook</h2>
-              <p class="section-desc text-light-gold">
-                The Profile page allows users to manage their personal information, saved content, and activity history. It personalizes the CeylonVisor experience by tracking exploration progress.
+              <div class="section-tag text-cream reveal-slide-left">Your Journey</div>
+              <h2 class="section-title text-gold reveal-slide-left delay-200">Logbook</h2>
+              <p class="section-desc text-light-gold reveal-slide-left delay-400">
+                The Profile page allows users to manage their personal information, saved content, and activity history.
+                It personalizes the CeylonVisor experience by tracking exploration progress.
               </p>
 
-              <div class="feature-cards-gold">
+              <div class="feature-cards-gold reveal-slide-left delay-400">
                 <div class="card-gold">
                   <div class="icon-gold"><img src="images/profile 1.svg"></div>
                   <p>User profile management</p>
@@ -291,27 +303,28 @@
     <div class="container">
       <div class="contact-wrapper">
         <div class="contact-info">
-          <h2 class="contact-title">Contact Us</h2>
-          <p class="contact-desc">Have questions or feedback? Contact us and we’ll get back to you soon.</p>
+          <h2 class="contact-title reveal-slide-left">Contact Us</h2>
+          <p class="contact-desc reveal-slide-left delay-200">Have questions or feedback? Contact us and we’ll get back
+            to you soon.</p>
 
-          <div class="info-item">
+          <div class="info-item reveal-slide-left delay-400">
             <div class="icon"><img src="images/email.svg" alt="Email"></div>
             <span>ceylonvisor@gmail.com</span>
           </div>
-          <div class="info-item">
+          <div class="info-item reveal-slide-left delay-400">
             <div class="icon"><img src="images/location.svg" alt="Location"></div>
             <div>
               <span>No.11 Station Road Matara</span><br>
               <span>Sri Lanka</span>
             </div>
           </div>
-          <div class="info-item">
+          <div class="info-item reveal-slide-left delay-400">
             <div class="icon"><img src="images/phone.svg" alt="Phone"></div>
             <span>+94 71 647 1001</span>
           </div>
         </div>
 
-        <div class="contact-form-container">
+        <div class="contact-form-container reveal-slide-right delay-200">
           <form class="contact-form">
             <div class="form-group">
               <label>Name <span class="required">*</span></label>
@@ -340,7 +353,8 @@
             <span>Ceylon<span class="font-light">Visor</span></span>
           </a>
           <p class="brand-desc">
-            CeylonVisor is an AR-powered platform that brings Sri Lanka’s culture, landmarks, and stories to life through immersive digital experiences.
+            CeylonVisor is an AR-powered platform that brings Sri Lanka’s culture, landmarks, and stories to life
+            through immersive digital experiences.
           </p>
           <div class="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"
@@ -379,16 +393,6 @@
       <path d="M18 15l-6-6-6 6" />
     </svg>
   </button>
-  <script>
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const mainNav = document.querySelector('.main-nav');
-    if (menuToggle && mainNav) {
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        mainNav.classList.toggle('active');
-      });
-    }
-  </script>
 </body>
 
 </html>

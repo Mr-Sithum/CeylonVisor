@@ -20,15 +20,15 @@
       <div class="container">
         <header class="page-header">
           <div class="header-content">
-            <h1 class="page-title">PRIVACY POLICY — CeylonVisor</h1>
+            <h1 class="page-title reveal-slide-left">PRIVACY POLICY — CeylonVisor</h1>
 
-            <div class="last-updated-wrapper">
+            <div class="last-updated-wrapper reveal-slide-left delay-200">
               <img src="images/left line.svg" alt="" class="decorative-svg left">
               <p class="last-updated">Last Updated: 14 January 2025</p>
               <img src="images/right line.svg" alt="" class="decorative-svg right">
             </div>
 
-            <p class="header-intro">Please read this Privacy Policy carefully before using our website and purchasing our products.</p>
+            <p class="header-intro reveal-slide-left delay-400">Please read this Privacy Policy carefully before using our website and purchasing our products.</p>
           </div>
 
           <div class="header-divider"></div>
@@ -204,21 +204,6 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script>
-    function downloadPDF() {
-      const element = document.getElementById("privacy-content");
-
-      const options = {
-        margin: 0.5,
-        filename: 'CeylonVisor-Privacy Policy.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
-      };
-
-      html2pdf().set(options).from(element).save();
-    }
-  </script>
 </body>
 
 </html>
