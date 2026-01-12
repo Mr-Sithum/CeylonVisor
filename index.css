@@ -1,3 +1,60 @@
+/* Intro Animation Styles */
+.intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.intro-box {
+  position: relative;
+  padding: 40px 60px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-text {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  margin: 0;
+  position: relative;
+
+  /* Background clipping for the fill effect */
+  color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, #fff 0%, #fff 0%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+  transition: background-size 2s ease-in-out;
+  background-size: 0% 100%;
+}
+
+.intro-text.filled {
+  background-size: 100% 100%;
+}
+
+.intro-line {
+  width: 0;
+  height: 2px;
+  background: #fff;
+  margin-top: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+.intro-line.grow {
+  width: 100%;
+}
+
 /* CSS for section section:Header */
 #header {
   position: fixed;
@@ -108,7 +165,8 @@
 
 /* CSS for section section:Hero */
 #hero {
-  height: 861px;
+  min-height: 100vh;
+  padding: 120px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -893,6 +951,10 @@
   .main-nav {
     gap: 30px;
   }
+
+  .mockup-container {
+    transform: scale(0.9);
+  }
 }
 
 @media (max-width: 768px) {
@@ -954,5 +1016,35 @@
   .footer-links {
     margin: 0;
     gap: 40px;
+  }
+
+  .mockup-container {
+    transform: scale(0.8);
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-text {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+
+  .intro-box {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .mockup-container {
+    transform: scale(0.7);
+    transform-origin: top center;
   }
 }

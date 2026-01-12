@@ -179,6 +179,10 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .faq-section {
+    padding: 60px 20px;
+  }
+
   .faq-container {
     gap: 60px;
   }

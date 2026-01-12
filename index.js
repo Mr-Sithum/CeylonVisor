@@ -1,3 +1,48 @@
+// 0. Cinematic Intro Animation
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Create the Elements
+    const overlay = document.createElement('div');
+    overlay.className = 'intro-overlay';
+
+    const box = document.createElement('div');
+    box.className = 'intro-box';
+
+    const title = document.createElement('h1');
+    title.className = 'intro-text';
+    title.innerHTML = '<span>Ceylon<span class="font-light">Visor</span></span>';
+
+    const line = document.createElement('div');
+    line.className = 'intro-line';
+
+    box.appendChild(title);
+    box.appendChild(line);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+
+    // Lock scroll during intro
+    document.body.style.overflow = 'hidden';
+
+    // 2. Trigger Animations
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            // Start filling text and growing line
+            title.classList.add('filled');
+            line.classList.add('grow');
+        }, 500);
+
+        setTimeout(() => {
+            // Slide the whole overlay up (Shutter effect)
+            overlay.style.transform = 'translateY(-100%)';
+            document.body.style.overflow = '';
+        }, 3000);
+
+        setTimeout(() => {
+            // Cleanup from DOM
+            overlay.remove();
+        }, 4000);
+    });
+});
+
 // 1. Hero Parallax Effect
 const heroBg = document.querySelector('.hero-bg img');
 if (heroBg) {
@@ -165,7 +210,7 @@ if (heroSubtitle) {
                 heroSubtitle.classList.remove('typing-cursor'); // Stop blinking when done
             }
         }, 30); // Typing speed (ms per character)
-    }, 1200);
+    }, 3000);
 }
 
 // 9. Contact Form Validation

@@ -130,6 +130,14 @@ body {
   .page-title {
     font-size: 36px;
   }
+
+  .team-hero {
+    padding: 120px 20px 60px;
+  }
+
+  .team-section {
+    padding: 40px 20px 80px;
+  }
 }
 
 /* Header Styles */
