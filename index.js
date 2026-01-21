@@ -222,7 +222,6 @@ if (contactForm) {
 
         // Select inputs based on placeholder or structure
         const nameInput = contactForm.querySelector('input[placeholder="Name"]');
-        const emailInput = contactForm.querySelector('input[placeholder="Email"]');
         const messageInput = contactForm.querySelector('textarea');
 
         // Helper functions
@@ -252,17 +251,6 @@ if (contactForm) {
             clearError(nameInput);
         }
 
-        // Validate Email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailInput.value.trim()) {
-            setError(emailInput, 'Email is required');
-            isValid = false;
-        } else if (!emailRegex.test(emailInput.value.trim())) {
-            setError(emailInput, 'Please enter a valid email address');
-            isValid = false;
-        } else {
-            clearError(emailInput);
-        }
 
         if (isValid) {
             // Simulate success
@@ -276,8 +264,8 @@ if (contactForm) {
 
             // Mailto Logic (Opens User's Email Client)
             setTimeout(() => {
-                const subject = `Contact from CeylonVisor: ${nameInput.value}`;
-                const body = `Name: ${nameInput.value}\nEmail: ${emailInput.value}\n\nMessage:\n${messageInput ? messageInput.value : ''}`;
+                const subject = `Message from ${nameInput.value} via Ceylon Visor Website`;
+                const body = `${messageInput ? messageInput.value : ''}`;
                 const mailtoLink = `mailto:ceylonvisor@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
                 window.location.href = mailtoLink;
