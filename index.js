@@ -121,7 +121,7 @@ const sections = document.querySelectorAll('.features-sequence .section');
 if (masterPhone && sections.length > 0) {
     const phoneObserverOptions = {
         root: null,
-        threshold: 0.3 // Trigger when 30% of section is visible
+        threshold: 0.5 // Trigger when 50% of section is visible
     };
 
     const phoneObserver = new IntersectionObserver((entries) => {
@@ -311,7 +311,7 @@ if (contactSection && stickyWrapper) {
         // Fade out as contact section enters viewport
         // Map range: contact top at bottom of screen (opacity 1) -> contact top at 40% of screen (opacity 0)
         const startFade = windowHeight;
-        const endFade = windowHeight * 0.4;
+        const endFade = windowHeight * 0.1;
 
         let opacity = (contactRect.top - endFade) / (startFade - endFade);
         opacity = Math.max(0, Math.min(1, opacity));
